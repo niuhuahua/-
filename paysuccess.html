@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-6 mt5">
+					<img src="img/paymoney/success.png" width="20%"/>
+					<span class="f2 green in-block">支付成功</span>
+				</div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-12 border_grey mt5 mb3"></div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5"> <span class="grey in-block ml8">金额</span> <span class="in-block  floatr mr8">11.86元</span> </p>
+				</div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5 grey"> <span class=" in-block ml8 hor_line">订单金额</span> <span class="in-block  floatr mr8 hor_line">12元</span> </p>
+				</div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5"> <span class="grey in-block ml8">优惠</span> <span class="in-block  floatr mr8 orange">已减3元</span> </p>
+				</div>
+				<div class="col-xs-12 border_grey mt3 mb3"></div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5 grey"> <span class=" in-block ml8">商品</span> <span class="in-block  floatr mr8">香奈儿包包</span> </p>
+				</div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5 grey"> <span class=" in-block ml8">支付方式</span> <span class="in-block  floatr mr8">微信支付</span> </p>
+				</div>
+				<div class="col-xs-12 mt1 ">
+					<p class="f1_5 grey"> <span class=" in-block ml8">交易时间</span> <span class="in-block  floatr mr8">2017-02-18 12:45:12</span> </p>
+				</div>
+				
+				<div class="col-xs-2">
+					
+				</div>
+			   <div class="col-xs-4 mt10">
+				<div class="center back_bg ptm5 radius5 back">
+					返回
+				</div>
+				</div>
+				<div class="col-xs-4 mt10">
+				<div class="center btn_bg ptm5 radius5 border_orange go" >
+					继续逛逛
+				</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".back").click(function(){
+					window.history.back(-1);
+				})
+				$(".go").click(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/index.html";
+				})
+			})
+		</script>
+	</body>
+</html>

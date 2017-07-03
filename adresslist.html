@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>收货地址列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.shop-cricle{border-radius: 50%; width: 1.6rem;height:1.6rem; position: relative;}
+		.circle-grey{background: #D6D3CE;}
+		.circle-red{ background-color: #e8a05c;}
+		.ok-img-margin{width: 1.1rem;position: absolute;top: 25%;left: 14%;}
+	</style>
+	</head>
+	<body class="bg_div_grey">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-xs-12 ">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p>夜雨妖妖  <span class="in-block floatr">18721124127</span></p>
+						<p>山东省济南市历下区山东大学南门南苑1号楼</p>
+						<div class="mb3 pr">
+							<div class="shop-cricle circle-grey in-block mt1" id="change" style="display: inline-block;"><img src="img/cart/ok.png"class="ok-img-margin"/></div>
+						   <span class="in-block grey ml1">默认</span>
+						  <span class="in-block floatr mt1 delete"><img src="img/list/delete.png" width="20%"/><span class="grey ml8">删除</span></span>
+						   <span class="in-block floatr ml8 mt1 edit"><img src="img/list/edit.png" width="20%"/><span class="grey ml8">编辑</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 ">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p>夜雨妖妖  <span class="in-block floatr">18721124127</span></p>
+						<p>山东省济南市历下区山东大学南门南苑1号楼</p>
+						<div class="mb3 pr">
+							<div class="shop-cricle circle-grey in-block mt1" id="change" style="display: inline-block;" ><img src="img/cart/ok.png"class="ok-img-margin"/></div>
+						   <span class="in-block grey ml1">默认</span>
+						  <span class="in-block floatr mt1 delete"><img src="img/list/delete.png" width="20%"/><span class="grey ml8">删除</span></span>
+						   <span class="in-block floatr ml8 mt1 edit"><img src="img/list/edit.png" width="20%"/><span class="grey ml8">编辑</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 ">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p>夜雨妖妖  <span class="in-block floatr">18721124127</span></p>
+						<p>山东省济南市历下区山东大学南门南苑1号楼</p>
+						<div class="mb3 pr">
+							<div class="shop-cricle circle-grey in-block mt1" id="change" style="display: inline-block;" ><img src="img/cart/ok.png"class="ok-img-margin"/></div>
+						   <span class="in-block grey ml1">默认</span>
+						  <span class="in-block floatr mt1 delete"><img src="img/list/delete.png" width="20%"/><span class="grey ml8">删除</span></span>
+						   <span class="in-block floatr ml8 mt1 edit"><img src="img/list/edit.png" width="20%"/><span class="grey ml8">编辑</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div id="footer" class="container mt18 ">
+			<nav class="navbar navbar-default navbar-fixed-bottom bg_div_orange">
+		    <div class="navbar-inner navbar-content-center">
+		        <p class="center edit"><span class="in-block f2_3 write">+</span> <span class="in-block f1_8 write ml3">新建地址</span></p>
+		    </div>
+	     </nav>
+		</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+			
+				$(".shop-cricle").each(function(){
+					$(this).click(function(){
+						var arr = $(this).attr("class").split(" ");
+		 		if(arr[1]=="circle-red"){
+		 			 $(this).attr("class","shop-cricle circle-grey");
+		 		}else{
+		 			 $(this).attr("class","shop-cricle circle-red");
+		 		}
+					})
+				})
+				$(".delete").each(function(){
+					$(this).click(function(){
+						$(this).parent().parent().hide();
+					})
+				})
+				$(".edit").click(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/newAdress.html";
+				})
+			})
+		</script>
+	</body>
+</html>

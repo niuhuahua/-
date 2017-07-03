@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>优惠券</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body class="bg_div_grey">
+		<div class="container">
+			<div class="row  mt1 title">
+				<div class="title_list  col-xs-4 orange border_bottom_orange pm2 f1_5 center" id="title_list_1">
+					 未使用 
+				</div>
+				<div class="title_list  col-xs-4 grey border_grey pm2 f1_5 center" id="title_list_2">
+					使用记录
+				</div>
+				<div class="title_list  col-xs-4 grey border_grey pm2 f1_5 center" id="title_list_3">
+					已过期
+				</div>
+				<div class="col-xs-12 title_list_1">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p class="orange">￥<span class="f2">5</span>
+							<span class="in-block floatr grey">限2017-05-04可用</span></p>
+						<p class="grey">满100元可用  <span class="f1">限生活用品</span><span class="in-block floatr orange go">去使用</span> </p>
+					</div>
+				</div>
+				<div class="col-xs-12 title_list_1">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p class="orange">￥<span class="f2">5</span>
+							<span class="in-block floatr grey">限2017-05-04可用</span></p>
+						<p class="grey">满100元可用 <span class="in-block floatr orange go">去使用</span> </p>
+					</div>
+				</div>
+				<div class="col-xs-12 title_list_2" style="display: none;">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p class="orange">￥<span class="f2">5</span>
+							<span class="in-block floatr grey">限2017-05-04可用</span></p>
+						<p class="grey">满100元可用 <span class="in-block floatr grey">已使用</span> </p>
+					</div>
+				</div>
+				<div class="col-xs-12 title_list_3"  style="display: none;">
+					<div class="bg_div_write mt3 pall36 radius5">
+						<p class="grey">￥<span class="f2">5</span>
+							<span class="in-block floatr grey">限2017-05-04可用</span></p>
+						<p class="grey">满100元可用 <span class="in-block floatr grey">已过期</span> </p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script>
+			$(".title_list").each(function(){
+				$(this).click(function(){
+					$(this).addClass("orange border_bottom_orange").removeClass("grey border_grey").siblings().removeClass("orange border_bottom_orange").addClass("grey border_grey");
+				    var listClass = $(this).attr("id");
+				    $(".title_list_1").hide();
+				    $(".title_list_2").hide();
+				    $(" .title_list_3").hide();
+				    $(" .title_list_4").hide();
+				    if(listClass==="title_list_1"){
+				    	$(" .title_list_1").show();
+				    }else if(listClass==="title_list_2"){
+				    	$(" .title_list_2").show();
+				    }else if(listClass==="title_list_3"){
+				    	$(" .title_list_3").show();
+				    }
+				    else if(listClass==="title_list_4"){
+				    	$(".title_list_4").show();
+				    }
+				})
+				$(".go").each(function(){
+					$(this).click(function(){
+						window.location.href="http://192.168.1.106:8020/lexianghui/index.html";
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

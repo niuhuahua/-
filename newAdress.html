@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>收货地址列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.input-div{background: #F6F5F4;height: 4.5rem;line-height: 4.5rem;border-bottom: 1px solid #EDEAE8;}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row row_padding5">
+				<div class="col-xs-12 input-div">
+		 			<span>收货人：</span>
+		 			<input type="text"  placeholder="亲" class="in-block f1_5 pl5 border_no" />
+		 		</div>
+		 		<div class="col-xs-12 input-div">
+		 			<span>手机号码：</span>
+		 			<input type="text"  placeholder="亲" class="in-block ml5 f1_5 border_no "   />
+		 		</div>
+		 		<div class="col-xs-12 input-div">
+		 			<span>所在省：</span>
+		 			<select class="ml12 border_no">
+		 					<option value="">山东省</option>
+		 					<option value="">河南省</option>
+		 				</select>
+		 		</div>
+		 		<div class="col-xs-12 input-div">
+		 			<span>所在市：</span>
+		 			<select class="ml12 border_no">
+		 					<option value="">济南市</option>
+		 					<option value="">菏泽市</option>
+		 				</select>
+		 		</div>
+		 		<div class="col-xs-12 input-div">
+		 			<span>所在区县：</span>
+		 			<select class="ml8 border_no">
+		 					<option value="">历城区</option>
+		 					<option value="">历下区</option>
+		 				</select>
+		 		</div>
+		 		<!--1-->
+		 		<div class="col-xs-3"></div>
+		 		<div class="col-xs-6">
+		 	     <div class="save center btn_bg ptm5 radius5 mt20 f_2" >
+					保存
+				</div>
+		 		</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".save").click(function(){
+				window.history.back(-1);
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>帮助</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row  ">
+				<div class="col-xs-12 mt3 border_grey">
+					<input type="file" accept="image/*"  capture="camera" id="image" style="display: none;">
+					<p class="f1_3"> <span class="in-block mt5">头像</span> <span class="in-block grey floatr f2"> <img src="img/me/椭圆 2.png" width="40px" height="40px" style="border-radius: 5rem;margin-bottom: .5rem;" class="image"/>  <img src="img/icons/more.png" width="15%" class="floatr mt20"/>   </span> </p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 ">用户名   <span class="in-block grey  floatr"> <input type="text"  value="夜雨妖妖" style="width: 80px;border: none;margin-bottom: .5rem;outline: none;"/>  <img src="img/icons/more.png" width="8%" class="floatr"/> </span> </p>
+					<p></p>
+				</div>
+				 <div class="col-xs-5 col-xs-offset-3 mt12">
+			       <div class="center btn_bg pall51 radius5 border_orange go" >
+					保存
+				   </div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".image").click(function(){
+				$("#image").click();
+			})
+			$(".go").click(function(){
+				window.location.href="http://192.168.1.106:8020/lexianghui/%e6%88%91%e7%9a%84.html";
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row bg_div_purple">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-6 center mt3">
+					<img src="img/me/椭圆 2.png" width="50%"/>
+					<p>夜雨妖妖 <span class="f1_1 grey">（佣乐享）</span></p>
+				</div>
+				<div class="col-xs-3"></div>
+			</div>
+			<div class="row mt5  ">
+				<div class="col-xs-3 center order_list">
+					<img src="img/me/待付款.png" width="50%"/>
+					<p class="mt5">待付款</p>
+				</div>
+				<div class="col-xs-3 center order_list">
+					<img src="img/me/待发货.png" width="60%"/>
+					<p class="mt5">待收货</p>
+				</div>
+				<div class="col-xs-3 center order_list">
+					<img src="img/me/待评价.png" width="50%"/>
+					<p class="mt5">待评价</p>
+				</div>
+				<div class="col-xs-3 center">
+					<img src="img/me/退款.png" width="45%"/>
+					<p class="mt5">售后</p>
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey" ></div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 grey order_list">我的订单    <img src="img/icons/more.png" width="3%" class="floatr"/></p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey ">
+					<p class="f1_3 grey like">我的收藏    <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 grey coupon">优惠券  <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 grey adress_list">地址管理    <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey" ></div>
+				<div class="col-xs-12 mt3 border_grey feedback">
+					<p class="f1_3 grey">意见反馈    <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 grey help">常见问题及帮助    <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+				<div class="col-xs-12 mt3 border_grey">
+					<p class="f1_3 grey setting">设置    <img src="img/icons/more.png" width="3%" class="floatr"/> </p>
+				</div>
+			</div>
+			<div id="footer" class="container mt18">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+	    <div class="navbar-inner navbar-content-center">
+	         <div class="row row_paddingl5">
+	         	<div class="col-xs-3 mt3 main">
+				    <img src="img/icons/home.png" width="25px"/>
+				    <p class="grey f1 mt5">首页</p>
+		        </div>
+		        <div class="col-xs-3 mt3">
+				    <img src="img/icons/classify.png" width="25px"/>
+				    <p class="grey f1 mt5">分类</p>
+		        </div>
+				<div class="col-xs-3 mt3 cart">
+					<img src="img/icons/cart.png" width="25px"/>
+					<p class="grey f1 mt5">购物车</p>
+				</div>
+				 <div class="col-xs-3 mt3 me">
+				    <img src="img/icons/me.png" width="25px"/>
+				    <p class="grey f1 mt5">我的</p>
+		        </div>
+	         </div>
+	         
+	    </div>
+     </nav>
+	</div>
+		</div>
+		<script type="text/javascript">
+	$(function(){
+		var index = 1;
+		$(".main").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/home_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+				setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/index.html";
+				},100);
+			}else{
+				$(this).children().eq(0).attr("src","img/icons/home.png");
+				$(this).children().eq(1).addClass("grey").removeClass("orange");
+			}
+		})
+		$(".cart").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/cart_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/%e7%bb%93%e7%ae%97%e8%b4%ad%e7%89%a9%e8%bd%a6.html";
+				},100);
+			} 
+		})
+		
+		$(".me").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/me_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/%e6%88%91%e7%9a%84.html";
+				},100);
+			} 
+		})
+		
+		$(".order_list").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/%e8%ae%a2%e5%8d%95%e5%88%97%e8%a1%a8.html";
+			},100);
+		})
+		$(".adress_list").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/adresslist.html";
+			},100);
+		})
+		$(".like").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/like.html";
+			},100);
+		})
+		$(".coupon").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/coupon.html";
+			},100);
+		})
+		$(".feedback").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/%20feedback.html";
+			},100);
+		})
+		$(".help").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/help.html";
+			},100);
+		})
+		/**/
+		$(".setting").click(function(){
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/setting.html";
+			},100);
+		})
+	})
+</script>
+	</body>
+</html>

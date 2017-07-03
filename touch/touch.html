@@ -1,0 +1,87 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>TouchSlider</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/> 
+<link href='style.css' rel='stylesheet'/>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+<script type="text/javascript" src="touchslider.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+<h1>TouchSlider</h1>
+<div class='swipe container' style='margin:10px;'>
+  <ul id='slider'>
+    <li style='display:block'>
+    <div class="row mt5 page">
+		<div class="col-xs-3 center">
+			<img src="img/index/hosehold.png" width="35px"/>
+			<p class="mt10">小家电</p>
+		</div>
+		<div class="col-xs-3 center" >
+			<img src="img/index/lift.png" width="35px"/>
+			<p class="mt10">百货店</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/make_up.png" width="35px"/>
+			<p class="mt10">美馆妆</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/find.png" width="35px"/>
+			<p class="mt10">选好物</p>
+		</div>	
+    </li>
+    <li><div>2</div></li>
+    <li><div>3</div></li>
+    <li> 
+    <div class="row mt5 page">
+		<div class="col-xs-3 center">
+			<img src="img/index/hosehold.png" width="35px"/>
+			<p class="mt10">小家电</p>
+		</div>
+		<div class="col-xs-3 center" >
+			<img src="img/index/lift.png" width="35px"/>
+			<p class="mt10">百货店</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/make_up.png" width="35px"/>
+			<p class="mt10">美馆妆</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/find.png" width="35px"/>
+			<p class="mt10">选好物</p>
+		</div>
+    
+    </li>
+    <li> 
+    	<div class="row mt5 page">
+		<div class="col-xs-3 center">
+			<img src="img/index/hosehold.png" width="35px"/>
+			<p class="mt10">小家电</p>
+		</div>
+		<div class="col-xs-3 center" >
+			<img src="img/index/lift.png" width="35px"/>
+			<p class="mt10">百货店</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/make_up.png" width="35px"/>
+			<p class="mt10">美馆妆</p>
+		</div>
+		<div class="col-xs-3 center">
+			<img src="img/index/find.png" width="35px"/>
+			<p class="mt10">选好物</p>
+		</div></li>
+  </ul>
+</div>
+
+<button onClick="t1.pause();">暂停</button>
+<button onClick="t1.play();">播放</button>
+<button onClick="t1.prev();">上一张</button>
+<button onClick="t1.next();">下一张</button>
+
+<script type="text/javascript">
+console=window.console || {dir:new Function(),log:new Function()};
+var t1=new TouchSlider('slider',{duration:800, interval:3000, direction:0, autoplay:false, align:'center', mousewheel:false, mouse:true, fullsize:false});
+</script>
+</body> 
+</html> 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--订单列表-->
+			<div class="row   mt3 title_list_find title_list_1" >
+				<div class="col-xs-3">
+					<img src="img/cart/img1.jpg" width="50rem" height="60rem"/>
+				</div>
+				<div class="col-xs-8">
+					<p class="f1_3 ellipsis" style="">智能手表（42毫米不锈钢表壳搭配白色运动型表带 MNPR2CH/A)</p>
+				    <p><span class="orange">￥45.5</span> <span class="in-block ml5 btn_bg prl5 radius5 f1">75折</span></p>
+				</div>
+				<div class="col-xs-12 mt2 pm3 border_grey">
+					<span class="grey f1">2017-03-23 12:23:34</span>
+					<span class="in-block ml12 btn_bg_grey pall15 radius5 f1_1 delete">移除</span>
+					<span class="in-block ml2 btn_bg pall15 radius5 f1_1 pay">购买</span>
+				</div>
+			</div>
+			<div class="row   mt3 title_list_find title_list_1" >
+				<div class="col-xs-3">
+					<img src="img/cart/img5.jpg" width="50rem" height="60rem"/>
+				</div>
+				<div class="col-xs-8">
+					<p class="f1_3 ellipsis" style="">智能手表（42毫米不锈钢表壳搭配白色运动型表带 MNPR2CH/A)</p>
+				    <p><span class="orange">￥45.5</span> <span class="in-block ml5 btn_bg prl5 radius5 f1">75折</span></p>
+				</div>
+				<div class="col-xs-12 mt2 pm3 border_grey">
+					<span class="grey f1">2017-03-23 12:23:34</span>
+					<span class="in-block ml12 btn_bg_grey pall15 radius5 f1_1 delete">移除</span>
+					<span class="in-block ml2 btn_bg pall15 radius5 f1_1 pay">购买</span>
+				</div>
+			</div>
+			</div>
+		<script type="text/javascript">
+			 $(function(){
+			 	$(".delete").each(function(){
+					$(this).click(function(){
+						$(this).parent().parent().hide();
+					})
+				})
+			 	$(".pay").each(function(){
+					$(this).click(function(){
+					 setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/paymoney.html";
+				  },100);})
+				})
+			 })
+		</script>
+	</body>
+</html>

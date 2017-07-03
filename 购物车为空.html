@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>购物车为空</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--第一部分-->
+			<div class="row bg_div_grey">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-6 center mb5 mt5">
+					<img src="img/none/page.png" width="60%"/>
+					<p class="f1_5 grey mt3">购物车是空的</p>
+					<div class="grey ptm2 bg_div_write radius1" id="some">继续逛逛</div>
+				</div>
+			</div>
+	<div class="row  ">
+		<div class="col-xs-12 mt1 mb2">
+			<span class="in-block f1_3 floatl">热门</span>
+			<span class="in-block  f1_3 floatr">更多></span>
+		</div>
+	   <div class="col-xs-6">
+	   	 <img src="img/index/sild1.png" width="125rem" height="80rem"/>
+	   	 <p class="f_2 mt8">明星都爱用的洁颜霜网红款，卸妆=洁面</p>
+	   	 <p><span class="rose">￥75</span><span class="grey">&nbsp;&nbsp;75折</span></p>
+	   </div>
+	   <div class="col-xs-6">
+	   	 <img src="img/index/sild2.png" width="125rem" height="80rem"/>
+	   	  <p class="f_2 mt8">韩国女士专用防晒套装sper+ads  专业护理</p>
+	   	 <p><span class="rose">￥45</span><span class="grey">&nbsp;&nbsp;85折</span></p>
+	   </div>
+	   <div class="col-xs-6">
+	   	 <img src="img/index/sild3.png" width="125rem" height="80rem"/>
+	   	  <p class="f_2 mt8">韩国女士专用防晒套装sper+ads  专业护理</p>
+	   	 <p><span class="rose">￥45</span><span class="grey">&nbsp;&nbsp;85折</span></p>
+	   </div>
+	   <div class="col-xs-6">
+	   	 <img src="img/index/sild1.png" width="125rem" height="80rem"/>
+	   	 <p class="f_2 mt8">明星都爱用的洁颜霜网红款，卸妆=洁面</p>
+	   	 <p><span class="rose">￥75</span><span class="grey">&nbsp;&nbsp;75折</span></p>
+	   </div>
+	  </div>
+	  <!--购物车为空-->
+	  <div id="footer" class="container mt18">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+	    <div class="navbar-inner navbar-content-center">
+	         <div class="row row_paddingl5">
+	         	<div class="col-xs-3 mt3 main">
+				    <img src="img/icons/home.png" width="25px"/>
+				    <p class="grey f1 mt5">首页</p>
+		        </div>
+		        <div class="col-xs-3 mt3">
+				    <img src="img/icons/classify.png" width="25px"/>
+				    <p class="grey f1 mt5">分类</p>
+		        </div>
+				<div class="col-xs-3 mt3 cart">
+					<img src="img/icons/cart.png" width="25px"/>
+					<p class="grey f1 mt5">购物车</p>
+				</div>
+				 <div class="col-xs-3 mt3 me">
+				    <img src="img/icons/me.png" width="25px"/>
+				    <p class="grey f1 mt5">我的</p>
+		        </div>
+	         </div>
+	         
+	    </div>
+     </nav>
+	</div>
+		</div>
+		<script type="text/javascript">
+			var index = 1;
+		$(".main").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/home_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+				setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/index.html";
+				},100);
+			}else{
+				$(this).children().eq(0).attr("src","img/icons/home.png");
+				$(this).children().eq(1).addClass("grey").removeClass("orange");
+			}
+		})
+		$(".cart").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/cart_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+			setTimeout(function(){
+					window.location.href="http://127.0.0.1:8020/lexianghui/%e7%bb%93%e7%ae%97%e8%b4%ad%e7%89%a9%e8%bd%a6.html";
+				},100);
+			} 
+		})
+		
+		$(".me").click(function(){
+			index++;
+			if(index%2==0){
+			$(this).children().eq(0).attr("src","img/icons/me_orange.png");
+			$(this).children().eq(1).addClass("orange").removeClass("grey");
+			setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/%e6%88%91%e7%9a%84.html";
+				},100);
+			} 
+		})
+			$("#some").click(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/index.html";
+			})
+		</script>
+	</body>
+</html>

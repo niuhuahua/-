@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <style type="text/css">
+    	.col-xs-5{
+    		padding-left: 0;
+    		padding-right: 0;
+    	}
+    	ul{list-style: none;}
+		    	/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+		::-webkit-scrollbar  
+		{  
+		    width: 2px;  
+		    height: 2px;  
+		    background-color: #F5F5F5;  
+		}  
+		  
+		/*定义滚动条轨道 内阴影+圆角*/  
+		::-webkit-scrollbar-track  
+		{  
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+		    border-radius: 10px;  
+		    background-color: #F5F5F5;  
+		}  
+		  
+		/*定义滑块 内阴影+圆角*/  
+		::-webkit-scrollbar-thumb  
+		{  
+		    border-radius: 20px;  
+		    background-color: #fff;  
+		}  
+		.btn_send{width: 48px; cursor: pointer; display: inline-block;background: green; text-align: center;  float: right;margin-right: 8px;height: 21px; line-height:21px;margin-top: -5px;border-radius: 3px;}
+		.go_btn{border: none;z-index:1000000;color:#FFFFFF}
+		.left_list{width: 96px;height:436px;background: #D4D4D4;display: inline-block;float: left;font-size: 2px;overflow: auto;}
+		.setmian{margin-right: 13px;margin-top: 13px;}
+		.setclose{margin-right: 13px;margin-top: 13px;}
+		.setmian,.setclose{display: inline-block;float: right;cursor: pointer;}
+    	.name_list{height: 25px;line-height: 25px;cursor: pointer;margin: 0;padding-left: 5px;}
+    	.name_list:hover{background: #FFFFFF;}
+    	.delete_list_name{display: inline-block;float: right;padding-right:5px;color: #D4D4D4;}
+    	.message {margin-left: -12px;display: inline-block;float: right;height:360px;overflow: auto;width: 450px;}
+  		.message .time[dd]{text-align:center}
+  		.message .time>span[dd]{display:inline-block;padding:0 4px;color:#fff;border-radius:1px;background-color:#dcdcdc;}
+  		.message .avatar[dd]{float:left;margin:0 8px 0 0;border-radius:10px;}
+  		.message .text[dd]{display:inline-block;position:relative;padding:0 10px;width:140px;min-height:40px;line-height:15px;
+  		font-size:2px;text-align:left;word-break:break-all;background-color:#fafafa;border-radius:6px}
+  		.message .text[dd]:before{content:" ";position:absolute;top:6px;right:100%;border:6px solid transparent;border-right-color:#fafafa;}
+  		.message .self[dd]{text-align:right;margin-right: 4px;}
+  		.message .self .avatar[dd]{float:right;margin:0 0 0 8px}
+  		.message .self .text[dd]{background-color:#b2e281}
+  		.text-div{}
+  		.message .self .text[dd]:before{right:inherit;left:100%;border-right-color:transparent;border-left-color:#b2e281}  				
+    </style>
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/layer/3.0.1/layer.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container" >
+			<div class="row" id="window">
+				<div class="col-xs-5 col-xs-offset-3" style="border: 2px solid #BEBEBE;background: #FCFDFA;;height: 490px;margin-top: 80px;">
+					<div style="background: #FCFDFA;height: 50px;border-bottom: .1px solid #D9D9D9;">
+						<img src="images/1.png" width="70px" style="border: 1px solid #0062CC;display: inline-block; margin-top: -23px;"/>
+					     <span>夜雨妖妖</span>
+					     <span class="setclose">X</span>
+					     <span class="setmian">-</span>
+					 
+					</div>
+					<div  class="left_list">
+						<p class="name_list">夜雨妖妖 <span  class="delete_list_name">X</span> </p>
+						<p class="name_list">夜雨妖妖 <span  class="delete_list_name">X</span> </p>
+						<p class="name_list">夜雨妖妖 <span  class="delete_list_name">X</span> </p>
+					</div>
+					<div class="message" style="background: #fff;">
+					   		<ul > 
+					   			<li  style="margin-left: -32px;"> <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main" dd=""> <img class="avatar" width="38" height="38" dd="" src="img/socket/惠.png"> <div class="text" dd="">你好这里是乐享惠客服你好这里是乐享惠客服</div> </div> </li>
+						        <li > <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main self" dd=""> <img class="avatar" width="38" height="38" dd="" src="img/socket/1.jpg"> <div class="text" dd="">ss</div> </div> </li>
+						        <li  style="margin-left: -32px;"> <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main" dd=""> <img class="avatar" width="38" height="38" dd="" src="img/socket/惠.png"> <div class="text" dd="">你好这里是乐享惠客服你好这里是乐享惠客服</div> </div> </li>
+						        <li > <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main self" dd=""> <img class="avatar" width="38" height="38" dd="" src="img/socket/1.jpg"> <div class="text" dd="">ss</div> </div> </li>
+						        <li  style="margin-left: -32px;"> <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main" dd=""> <img class="avatar"width="38" height="38" dd="" src="img/socket/惠.png"> <div class="text" dd="">你好这里是乐享惠客服你好这里是乐享惠客服</div> </div> </li>
+						        <li > <p class="time" dd=""> <span dd="">11:41</span> </p> <div class="main self" dd=""> <img class="avatar" width="38" height="38" dd="" src="img/socket/1.jpg"> <div class="text" dd="">ss</div> </div> </li>
+						   </ul>
+					</div>
+					<!--width: 97.8px;height: 19.7px;-->
+					 <textarea name="" class="text_div" style="width: 452.5px;height: 54.7px;border: none; background: #F2F2F2; outline: none;"></textarea>
+					 <div class="go_btn">
+					 	<div class="btn_send">发送</div>
+					 </div>
+				</div>
+			</div>
+	   </div>
+	   <script type="text/javascript">
+	   	$(".setclose").click(function(){
+	   		$("#window").hide();
+	   	})
+	   	$(".setmian").click(function(){
+	   		$("#window").hide();
+	   	})
+	   </script>
+	</body>
+</html>

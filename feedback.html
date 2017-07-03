@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>评论</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row  mt3 title_list_find title_list_4" >
+				<div class="col-xs-3">
+					<img src="img/icons/成功.png" width="50rem" height="50rem"/>
+				</div>
+				<div class="col-xs-9">
+					<p class="mt3 orange f1_8">请写下您的建议</p>
+				</div>
+				 <textarea name="" rows="5"  class="col-xs-10 mt5 col-xs-offset-1 " placeholder="请写下您的建议"></textarea>
+			     <div class="col-xs-12 mt5">
+			     	    <input type="file" accept="image/*"  capture="camera" id="image" style="display: none;">
+			     		<img src="img/icons/camera.png" width="20%" class="btn_bg_grey_dash pall5 camera"/>
+			     </div>
+			     <div class="col-xs-12 hg3 bg_div_grey mt5" ></div>
+			      <div class="col-xs-12 mt5">
+			      	<span class="">手机号码：</span>
+			      	<input type="text" class="in-block"/>
+			     </div>
+			      <div class="col-xs-12 hg3 bg_div_grey mt5"style="padding-right:15px;padding-left:15px" ></div>
+			     
+			      <div class="col-xs-5 col-xs-offset-3 mt12">
+			       <div class="center btn_bg pall51 radius5 border_orange go" >
+					反馈
+				   </div>
+			     </div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".camera").click(function(){
+				$("#image").click();
+			})
+			$(".go").click(function(){
+				window.location.href="http://192.168.1.106:8020/lexianghui/%e6%88%91%e7%9a%84.html";
+			})
+		</script>
+	</body>
+</html>

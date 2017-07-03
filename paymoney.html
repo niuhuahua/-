@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 hg3 bg_div_grey" ></div>
+				<div class="col-xs-12 mb1 mt1">
+					<p class="grey in-block ml3 mt2">门店 </p>
+					<p class="in-block floatr mr5">香奈儿专卖店 <img src="img/icons/more.png" width="8%" class="floatr mt5"/> </p>
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey" ></div>
+			</div>
+			<div class="row   mt3 title_list_find title_list_1" >
+				<div class="col-xs-3">
+					<img src="img/cart/img4.jpg" width="71px" height="95px"/>
+				</div>
+				<div class="col-xs-7">
+					<p class="f1_3 ellipsis" style="">智能手表（42毫米不锈钢表壳搭配白色运动型表带 MNPR2CH/A)</p>
+				    <p><span class="orange">￥45.5</span> <span class="in-block ml5 btn_bg prl5 radius5 f1">75折</span></p>
+				</div>
+				<div class="col-xs-2 mt3">
+					x1
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey mt3 mb3" ></div>
+				<div class="col-xs-12">
+					<span class="grey">付款方式</span><span class="in-block floatr">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success dropdown-toggle btn-xs" 
+									data-toggle="dropdown">
+								微信支付 <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">微信支付</a></li>
+								<li><a href="#">店奖支付</a></li>
+							</ul>
+	                   </div>
+					</span>
+				</div>
+				<div class="col-xs-12 mt3">
+					<span class="grey">使用优惠卷</span><span class="in-block floatr">
+						<div class="btn-group">
+							<button type="button" class="btn  dropdown-toggle btn-xs" 
+									data-toggle="dropdown">
+								选择优惠卷 <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">无可用</a></li>
+								<li><a href="#">满100减10</a></li>
+							</ul>
+	                   </div>
+					</span>
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey mt3 mb3" ></div>
+				<div class="col-xs-12 mb1 mt1">
+					<p class="grey in-block mt2 default">默认收货地址 </p>
+					<p class="in-block floatr mr5 adress_list">修改地址 <span class="f2 grey">></span> </p>
+				</div>
+				<div class="col-xs-12">
+					<p> <img src="img/paymoney/pjone.png" width="4%"/> 
+					<span>18721124127</span><span class="in-block ml5">收货人姓名:夜雨妖妖</span>
+					</p>
+					<p style="position: relative;"><img src="img/paymoney/adress.png" width="5%"/> 
+					<span class="in-block ellipsis" style="width: 90%;position: absolute;top: 18%;left: 6%;">山东济南历城区山东大学主校区南门</span>
+					</p>
+				</div>
+				<div class="col-xs-12 hg3 bg_div_grey mt3 mb3" ></div>
+				<div class="col-xs-12">
+					<p class="grey in-block  mt2">已折扣 </p>
+					<p class="in-block floatr mt2 mr5 orange">￥3 </p>
+				</div>
+				<div class="col-xs-12">
+					<p class="grey in-block  mt2">还需支付 </p>
+					<p class="in-block floatr mt2 mr5 orange">￥41.5 </p>
+				</div>
+			</div>
+			<!--底部浮动-->
+	<div id="footer" class="container mt18">
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+	    <div class="navbar-inner navbar-content-center">
+	         <div class="row  ">
+	         	<div class="col-xs-3 mt3"></div>
+			<div class="col-xs-6 mt1 ">
+				<div class="center btn_bg ptm5 radius5 go">
+					立即下单
+				</div>
+			</div>
+			<div class="col-xs-3 mt3"></div>
+	         </div>
+	         
+	    </div>
+     </nav>
+	</div>
+		</div>
+		<script type="text/javascript">
+			$(".dropdown-menu").children().each(function(){
+				$(this).click(function(){
+					var money = $(this).text();
+					$(this).parent().siblings().eq(0).text(money);
+				})
+			})
+			$(".go").click(function(){
+					setTimeout(function(){
+					window.location.href="http://192.168.1.106:8020/lexianghui/paysuccess.html";
+				},100);})
+			$(".adress_list").click(function(){
+				window.location.href="http://192.168.1.106:8020/lexianghui/newAdress.html";
+			})
+			$(".default").click(function(){
+				window.location.href="http://192.168.1.106:8020/lexianghui/adresslist.html";
+			})
+		</script>
+	</body>
+</html>
